@@ -1,0 +1,182 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+p {
+	margin: 5px 0;
+}
+img {
+	border: 0;
+}
+body {
+	background-color: #FFF;
+}
+#main {
+	background: white;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#top {
+	width: 800px;
+	height: 166px;
+	background: url(../images/blog/admin/blogAdmin.jpg) no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 4px blue double;
+}
+#top p {
+	padding-left: 600px; 
+	padding-top:  140px;
+}
+#top p a {
+	color: black;
+	text-decoration: none;
+	border-bottom: dashed 2px red;
+}
+#left {
+	margin-top: 5px;
+	float: left;
+}
+.block {
+	clear: left;
+	border: dashed green 1px;
+	width: 200px;
+	text-align: center;
+	margin-top: 1px;
+}
+.type {
+	margin: 0;
+	display: block;
+	font-size: 110%;
+	width: 200px;
+	height: 30px;
+	background: url(../images/blog/admin/blogBlockBG.jpg) no-repeat center center;
+	padding-top: 5px;
+}
+#left p {
+	margin-bottom: 5px;
+}
+#center {
+	float: left;
+	min-height: 400px;
+	margin-left: 10px;
+	text-align: center;
+	width: 580px;
+}
+#title {	
+	width: 98%;
+	height: 40px;
+	font-size: 130%;
+	background: #DDF;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 5px;
+}
+#center #form {
+	text-align: right;
+	margin-right: 10px;
+}
+#center #uploadNewArcticle, #articleModify {
+	text-align: left;
+	line-height: 0px;
+}
+#table {
+	width: 570px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 180%;
+}
+#table th {
+	text-align: center;
+	font-weight: bold;
+}
+#table .articleTitle {
+	width: 45%;
+}
+#table .uploadTime {
+	width: 35%;
+}
+#table .action {
+	width: 20%;
+}
+#table th {
+	background-color: #AFA;
+}
+#table {
+	border: solid 1px green;
+}
+#table td {
+	text-align: center;
+}
+.text {
+	width: 25em;
+}
+.textArea {
+	width: 570px;
+	height: 140px;
+	resize: none;
+}
+.wordList {
+	width: 90%;
+	margin-left: 5%;
+	border-bottom: dashed 2px red; 
+}
+.wordList p {
+	text-align: left;
+}
+.wordList .delete {
+	text-align: right;
+}
+.button_bg {
+	background: url(../images/blog/admin/button_bg.jpg) no-repeat;
+}
+.error {
+	height: 40px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/blog/error.png) no-repeat 5% center;
+	background-color: yellow;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.success {
+	height: 40px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/blog/success.png) no-repeat 5% center;
+	background-color: yellow;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+#center #readArticle {
+	text-align: left;
+}
+#center .info {
+	text-align: center;
+	color: #AAA;
+}
+#center .back {
+	text-align: center;
+}
+#end {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+#end address {
+	text-align:center;
+	color: #888;
+	font-style: normal ;
+}

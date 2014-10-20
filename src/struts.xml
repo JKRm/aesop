@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name = "struts.deveMode" value = "true"/>
+	<constant name="struts.custom.i18n.resources" value="mess"/>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.multipart.saveDir" value="C:/temp"/>
+	<constant name="struts.multipart.maxSize" value="300000000"/>
+
+ 	<package name="upload"  extends="struts-default" namespace="/upload">
+		<action name="uploadAction" class="cn.com.shanda.aesop.back.UploadAction">
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">200000000</param>
+			</interceptor-ref>
+			
+			<interceptor-ref name="defaultStack" />
+			<param name="savePath">../resources</param>
+			
+			<result>/succ.jsp</result>
+			<result name="input">/manage/admin/pages/upload.jsp</result>
+			
+		</action>
+		<action name="*">  
+			<result>/{1}.jsp</result>	
+		</action>
+	</package>
+	<package name="modify" extends="struts-default" namespace="/modify">
+		<action name="ModifyPasswordAction" class="cn.com.shanda.aesop.action.ModifyPasswordAction">
+			<result>/manage/admin/pages/ModifyPassword.jsp</result>
+		</action>
+	</package>
+	<package name = "del" extends="struts-default" namespace="/del">
+		<action name="DelResourceAction" class="cn.com.shanda.aesop.back.DelResourceAction">
+			<result>/manage/admin/pages/DelResource.jsp</result>
+		</action>
+		<action name="DelAdAction" class="cn.com.shanda.aesop.back.DelAdAction">
+			<result>/manage/admin/pages/DelAd.jsp</result>
+		</action>
+	</package>
+
+	<package name="advertisement" namespace="/ad" extends="struts-default" >
+		<action name="AdAction" class="cn.com.shanda.aesop.back.AdAction">
+			<result>/manage/admin/pages/message.jsp</result>
+		</action>
+	</package>
+	
+    <package name="aesop" extends="struts-default" namespace="/">
+		<action name="search" class="cn.com.shanda.aesop.action.SearchAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="error">/error.jsp</result>
+		</action> 
+		<action name="searchByPrompt" class="cn.com.shanda.aesop.action.SearchByPromptAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="accurateSearch" class="cn.com.shanda.aesop.action.AccurateSearchAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="showResult" class="cn.com.shanda.aesop.action.ShowResultAction">
+			<result name="success">/queryResult.jsp</result>
+			<result name="video">/videolist.jsp</result>
+			<result name="audio">/audiolist.jsp</result>
+			<result name="picture">/picturelist.jsp</result>
+			<result name="document">/documentlist.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="preview" class="cn.com.shanda.aesop.action.PreviewAction">
+            <result name="word">/preview_Word.jsp</result>
+            <result name="ppt">/preview_PPT.jsp</result>
+            <result name="pdf">/preview_PDF.jsp</result>
+            <result name="video">/preview_Video.jsp</result>
+            <result name="othervideo">/preview_OtherVideo.jsp</result>
+            <result name="sound">/preview_Sound.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="suggest" class="cn.com.shanda.aesop.action.SuggestAction">
+  			<result type="stream">
+        		<param name="contentType">text/xml;charset=UTF-8</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+        </action>
+        <action name="speak" class="cn.com.shanda.aesop.action.VoiceAction">
+  			<result type="stream">
+        		<param name="contentType">text;charset=UTF-8</param>
+        		<param name="inputName">inputStream</param>
+    		</result>
+        </action>
+	</package>
+    <package name="admin" extends="struts-default" namespace="/manage">
+    	<action name="adminAction" class="cn.com.shanda.aesop.action.LoginAction">
+			<result name="success">/manage/admin/pages/main.jsp</result>
+			<result name="login">/manage/admin/pages/login.jsp</result>
+		</action>
+    </package>
+	<package name = "function" extends="struts-default" namespace="/function">
+		<action name="WenkuAction" class="cn.com.shanda.aesop.action.WenkuAction">
+			<result>/wenku_main.jsp</result>
+		</action>
+		<action name="VideoAction" class="cn.com.shanda.aesop.action.VideoAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="AudioAction" class="cn.com.shanda.aesop.action.AudioAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="PictureAction" class="cn.com.shanda.aesop.action.PictureAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="DocumentAction" class="cn.com.shanda.aesop.action.DocumentAction">
+			<result name="success" type="chain">
+				<param name="actionName">showResult</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+	</package>
+	<package name="blog" extends="struts-default" namespace="/blog">
+
+	<action name="IndexAction" class="cn.com.shanda.aesop.blog.action.IndexAction">
+		<result name="success">/front/FrontIndex.jsp</result>
+	</action>
+	
+	<action name="ArticleAction" class="cn.com.shanda.aesop.blog.action.ArticleAction" >
+		<result name="validateFollow">/front/article/error.jsp</result>
+		<result name="followAddSuccess">/front/article/success.jsp</result>
+		<result name="followAddError">/front/article/error.jsp</result>
+		<result name="readArticle">/front/article/ArticleSingle.jsp</result>
+		<result name="modifyArticle">/admin/article/ArticleModify.jsp</result>
+		<result name="modifyArticleSuccess">/admin/success.jsp</result>
+		<result name="modifyArticleError">/admin/error.jsp</result>
+		<result name="deleteArticleSuccess">/admin/success.jsp</result>
+		<result name="deleteArticleError">/admin/error.jsp</result>
+		<result name="addArticleSuccess">/admin/success.jsp</result>
+		<result name="addArticleError">/admin/error.jsp</result>
+		<result name="adminSelectList">/admin/article/ArticleList.jsp</result>
+		<result name="adminSelectSingle">/admin/article/ArticleSingle.jsp</result>
+		<result name="selectArticle">/front/article/ArticleList.jsp</result>
+		<result name="addArticleTypeSuccess">/admin/success.jsp</result>
+		<result name="addArticleTypeError">/admin/error.jsp</result>
+		<result name="selectArticleType">/admin/article/ArticleTypeList.jsp</result>
+		<result name="modifyArticleType">/admin/article/ArticleTypeModify.jsp</result>
+		<result name="modifyArticleTypeSuccess">/admin/success.jsp</result>
+		<result name="modifyArticleTypeError">/admin/error.jsp</result>
+		<result name="deleteArticleTypeSuccess">/admin/success.jsp</result>
+		<result name="deleteArticleTypeError">/admin/error.jsp</result>
+	</action>
+	
+	<action name="FriendAction" class="cn.com.shanda.aesop.blog.action.FriendAction" >
+		<result name="modifyFriend">/admin/friend/FriendModify.jsp</result>
+		<result name="modifyFriendSuccess">/admin/success.jsp</result>
+		<result name="modifyFriendError">/admin/error.jsp</result>
+		<result name="singleFriend">/front/friend/FriendSingle.jsp</result>
+		<result name="adminSingleFriend">/admin/friend/FriendSingle.jsp</result>
+		<result name="deleteFriendSuccess">/admin/success.jsp</result>
+		<result name="deleteFriendError">/admin/error.jsp</result>
+		<result name="addFriendSuccess">/admin/success.jsp</result>
+		<result name="addFriendError">/admin/error.jsp</result>
+		<result name="listFriend">/front/friend/FriendList.jsp</result>
+		<result name="adminListFriend">/admin/friend/FriendList.jsp</result>
+	</action>
+	
+	<action name="LogonAction" class="cn.com.shanda.aesop.blog.action.LogXAction" >
+		<result name="isLogonSuccess">/admin/AdminIndex.jsp</result>
+		<result name="isLogonError">/admin/logon.jsp</result>
+		<result name="logon">/admin/logon.jsp</result>
+		<result name="logonError">/admin/AdminIndex.jsp</result>
+		<result name="logout">/front/FrontIndex.jsp</result>
+	</action>
+	
+	<action name="WordAction" class="cn.com.shanda.aesop.blog.action.WordAction" >
+		<result name="validateWord">/front/word/error.jsp</result>
+		<result name="addWordSuccess">/front/word/success.jsp</result>
+		<result name="addWordError">/front/word/error.jsp</result>
+		<result name="selectWord">/front/word/WordShow.jsp</result>
+		<result name="adminSelect">/admin/word/WordList.jsp</result>
+		<result name="deleteSuccess">/admin/success.jsp</result>
+		<result name="deleteError">/admin/error.jsp</result>
+	</action>
+	
+</package>
+
+<package name="map" extends="struts-default" namespace="/map">
+	<action name="MapAction" class="cn.com.shanda.aesop.action.MapAction">
+	<result>/aesopmap/map.jsp</result>
+	</action>
+	<action name="WayAction" class="cn.com.shanda.aesop.action.WayAction">
+	<result>/aesopmap/map.jsp</result>
+	</action>
+</package>	
+
+</struts>

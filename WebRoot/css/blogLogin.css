@@ -1,0 +1,32 @@
+body {
+	background-color: #FFF;
+}
+#main {
+}
+img {
+	border: 0;
+}
+#logo {
+	width: 800px;
+	height: 426px;
+	background: url(../images/blog/blog.jpg) no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
+#form {
+	text-align: center;
+	line-height: 100%;
+}
+#form p {
+	font-size: 130%;
+	font-family: "свт╡";
+}
+#form input {
+	height: 28px;
+}
+#form .link {
+	color: #0F0;
+}
+#form .button {
+	
+}

@@ -1,0 +1,128 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+img {
+	border: 0;
+}
+body {
+	background-color: white;
+}
+#main {
+	background: white;
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main ul {
+	text-align: center;
+	width: 560px;
+	list-style-type: none;
+}
+#main li {
+	display: inline;
+	font-family: "Ó×Ô²";
+	margin-left: 20px;;
+	margin-right: 0px;
+}
+#main li#all {
+	padding-right: 6px;
+}
+#main li#file {
+	background: url(../images/word.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main li#mp3 {
+	background: url(../images/mp3.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main li#video{
+	background: url(../images/video.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main li#picture{
+	background: url(../images/image.png) no-repeat right center;
+	padding-right: 17px;
+}
+#main li#other {
+}
+#main li a {
+	text-decoration: none;
+}
+#logo {
+	width: 400px;
+	height: 248px;
+	background: url(../images/logo.png);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+#main #form {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	line-height: 40px;
+}
+#main #form #queryText {
+	width: 400px;
+	margin-left: 60px;
+	margin-right: 15px;
+	font-family: "ÃÔÄã·±ÆôÌå", "Ó×Ô²";
+	font-size: 20px;
+	height: 32px;
+}
+#main #form #spanOutput {
+	width: 400px;
+	margin-left: 60px;
+	margin-right: 15px;
+	z-index: 101;
+	background-color: white;
+	border: 1px solid #000000;
+	padding-left: 2px;
+	overflow: visible;
+	display: none;
+	font-family: "ÃÔÄã·±ÆôÌå","Ó×Ô²";
+	text-align:left;
+}
+#search {
+	height: 28px;
+	font-size: 18px;
+	font-family: "ÃÔÄã·±ÆôÌå","Ó×Ô²";
+}
+#main #jump {
+	margin-top: 20px;
+}
+#main #jump p {
+	text-align: center;
+}
+#copyright {
+	color: blue;
+	margin-top: 100px;
+	font-size: 14px;
+	text-align: center;
+}
+#main address {
+	font-family: "Ó×Ô²";
+	font-style: normal;
+}
+a:link {
+	color: blue;
+}
+a:visited {
+	color: blue;
+}
+a:hover {
+	color: green;
+}
+a:active {
+	color: green;
+}
+span.spanMatchText{ text-decoration: underline;
+font-weight: bold; }
+span.spanNormalElement{ background: white; }
+span.spanHighElement{ background: blue;
+color: white;
+cursor: pointer;}

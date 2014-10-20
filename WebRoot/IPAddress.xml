@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IPList>
+	<IP>
+		<id>1</id>
+		<url>192.168.1.102</url>
+	</IP>
+	<IP>
+		<id>2</id>
+		<url>192.168.1.105</url>
+	</IP>
+	<IP>
+		<id>3</id>
+		<url>192.168.1.103</url>
+	</IP>
+	<IP>
+		<id>4</id>
+		<url>192.168.1.117</url>
+	</IP>
+	<IP>
+		<id>5</id>
+		<url></url>
+	</IP>
+	<host>
+		<url>192.168.1.102</url>
+	</host>
+</IPList>

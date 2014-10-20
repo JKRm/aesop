@@ -1,0 +1,205 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+img {
+	border: 0;
+}
+body {
+	background-color: #FFF;
+}
+#main {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#top {
+	width: 100%;
+	height: 168px;
+	background: url(../images/blog/front/blogFront.jpg) no-repeat;
+	border-bottom: 4px double blue;
+}
+#top #link {
+	padding-top: 140px;
+	padding-left: 480px;
+	color: black;
+	font-weight: bold;
+}
+#top #link a {
+	color: black;
+	text-decoration: none;
+	border-bottom: black 1px solid;
+}
+#left {
+	width: 200px;
+	float: left;
+	margin-top: 5px;
+}
+.block {
+	text-align: center;
+	border: 1px dashed green;
+	margin-bottom: 1px;
+	min-height: 80px;
+	padding-bottom: 5px;
+}
+p.center {
+	text-align: center;
+}
+p.left {
+	text-align: left;
+}
+p.right {
+	text-align: right;
+}
+.more {
+	margin-top: -20px;
+	margin-right: 10px;
+	background: url(../images/blog/front/more.jpg) no-repeat 92% center;
+}
+.friend {
+	margin-left: 20px;
+	padding-left: 20px;
+	background: url(../images/blog/front/friend.jpg) no-repeat 0 center;
+}
+.reviewico {
+	margin-left: 10px;
+	padding-left: 20px;
+	background: url(../images/blog/front/review.jpg) no-repeat 30% 70%;
+}
+#left .type {
+	font-size: 110%;
+	width: 200px;
+	height: 30px;
+	padding-top: 5px;
+	background: url(../images/blog/front/blogBlockBG.jpg) no-repeat center center;
+}
+.small {
+	font-size: 90%;
+}
+#center {
+	margin-top: 5px;
+	margin-left: 10px;
+	float: left;
+	width: 580px;
+	border-bottom: solid green 1px;
+	min-height: 470px;
+}
+#title {	
+	width: 98%;
+	height: 40px;
+	font-size: 130%;
+	background: #DDF;
+	text-align: center;
+	padding-top: 15px;
+	margin-left: 5px;
+}
+#type {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 40px;
+}
+.error {
+	text-align: center;
+	height: 40px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/blog/error.png) no-repeat 5% center;
+	background-color: yellow;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.success {
+	text-align: center;
+	height: 40px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/blog/success.png) no-repeat 5% center;
+	background-color: yellow;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.prompt {
+	text-align: center;
+	height: 40px;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(../images/blog/face.png) no-repeat 5% center;
+	background-color: yellow;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.articleType {
+	padding: 5px 10px;
+	background-color: #AFA;
+}
+.article {
+	width: 93%;
+	margin-left: 10px;
+	border-top: solid 1px green;
+	padding: 10px 10px 0 10px;
+}
+.read {
+	font-size: 80%;
+}
+.info {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 80%;
+	color: #AAA;
+}
+.wordBG {
+	background-color: #AFA;
+	padding: 10px;
+}
+.reviewList {
+	margin-top: 10px;
+	border-bottom: 1px black solid;
+	background-color: yellow;
+}
+.reviewItem {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px black solid;
+}
+.floor {
+	color: #444;
+}
+.text {
+	width: 25em;
+}
+.textArea {
+	width: 570px;
+	height: 140px;
+	resize: none;
+}
+.reviewWord {
+	margin-left: 60px;
+	font-style: italic;
+}
+.word {
+	margin-top: 10px;
+}
+#end {
+	clear: both;
+	padding-top: 20px;
+}
+address {
+	width: 200px;
+	font-style: normal;
+	font-size: 90%;
+	color: #AAA;
+	margin-left: auto;
+	margin-right: auto;
+}

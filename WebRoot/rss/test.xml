@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>易索新闻</title>
+    <link>http://localhost:8080/aesop</link>
+    <description>易索资源资讯</description>
+    <language>zh-cn</language>
+    <copyright>版权声明</copyright>
+    <pubDate>Sat, 03 Sep 2011 09:11:51 GMT</pubDate>
+    <ttl>5</ttl>
+  </channel>
+</rss>

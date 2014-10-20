@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GB2312"?>
+<GRAMMAR LANGID="804">
+	<DEFINE>
+		<ID NAME="VID_SubNameRule" VAL="3001"/>
+		<ID NAME="VID_TopLevelRule" VAL="3000"/>
+		<ID NAME="VID_SubName1" VAL="4001"/>
+		<ID NAME="VID_SubName2" VAL="4002"/>
+		<ID NAME="VID_SubName3" VAL="4003"/>
+		<ID NAME="VID_SubName4" VAL="4004"/>
+		<ID NAME="VID_SubName5" VAL="4005"/>
+		<ID NAME="VID_SubName6" VAL="4006"/>
+		<ID NAME="VID_SubName7" VAL="4007"/>
+		<ID NAME="VID_SubName8" VAL="4008"/>
+		<ID NAME="VID_SubName9" VAL="4009"/>
+		<ID NAME="VID_SubName10" VAL="4010"/>
+		<ID NAME="VID_SubName11" VAL="4011"/>
+	</DEFINE>
+	<RULE ID="VID_TopLevelRule" TOPLEVEL="ACTIVE">
+		<O>
+			<L>
+				<P>我</P>
+				<P>要</P>
+				<P>请</P>
+				<P>叫</P>
+				<P>找</P>
+				<P>一</P>
+				<P>下</P>
+			</L>
+		</O>
+		<RULEREF REFID="VID_SubNameRule" />
+	</RULE>
+	<RULE ID="VID_SubNameRule" >
+		<L PROPID="VID_SubNameRule">
+			<P VAL="VID_SubName1">王志轩</P>
+			<P VAL="VID_SubName2">包伟</P>
+			<P VAL="VID_SubName3">韩瑞</P>
+			<P VAL="VID_SubName4">房法强</P>
+			<P VAL="VID_SubName5">吕宝虹</P>
+			<P VAL="VID_SubName6">张三</P>
+			<P VAL="VID_SubName7">吴奎</P>
+			<P VAL="VID_SubName8">任维华</P>
+			<P VAL="VID_SubName9">樊页</P>
+			<P VAL="VID_SubName10">曹杨敏</P>
+			<P VAL="VID_SubName11">王宝强</P>
+		</L>
+	</RULE>
+</GRAMMAR>
